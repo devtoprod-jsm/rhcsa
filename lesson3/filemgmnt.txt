@@ -1,0 +1,40 @@
+pwd
+ls
+cd
+mkdir
+cp
+mv
+rm
+find /etc -name "hosts*" 2> /dev/null - used to find files starting with hosts in /etc
+man find
+which passwd (which is used to find binaries)
+whereis passwd (gives the entire environment related to binaries)
+locate passwd (gives all the files in the file system that have passwd string in their name) - updatedb to update database of locate.
+man locate
+
+Links (shortcut in windows)
+File - Is set of blocks containing data on storage.
+inode - unique representation of a file.
+hardlink - Is the name we reference when accessing files, that points to the inode directly.
+Hardlinks are one way i.e they know which inodes they are associated to but not the other way inode won't.
+Can have multiple hardlinks pointing to the same inode. Should be on the same partition as the inode.
+Symbolic links point to the hardlink. Can reside anywhere across the file system. becomes invalid if hardlink is removed
+ls -il
+ln <sourcefilename> <destinationfilename> (to create hardlink)
+ln -s <sourcefilename> <destinationfilename> (to create softlink)
+Softlink becomes invalid is the hardlink it points to is removed.
+Permissions are wide open, i.e the permissions on the hardlink are the ones that take effect.
+You can only create a link on a file if you have atleast read permissions on the file.
+
+tar:
+c - create
+x - extract
+v - verbose
+z - zip compress
+f - archive file to be created or extracted
+-C - particular location where you want to unarchive to
+examples:
+tar cvf etc.tar /etc
+tar xvf etc.tar -C /tmp
+rm /etc/wgetrc
+tar xvf etc.tar -C / etc/wgetrc

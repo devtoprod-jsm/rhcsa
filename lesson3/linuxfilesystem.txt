@@ -1,0 +1,11 @@
+/ - Root directory, starting point of everything in the linux file system.
+boot - this directory contains everything that your system needs to startup.
+usr - contains program files basically.
+etc - contains configuration files.
+home - contains user directories - could be on the same disk or a mount.
+mount - usually this is where we mount external disks.
+media - this is where you have the media like optical disk usb drives,  get mounted.
+root - root user home directory.
+tmp - temporary files written here by processes or users, recycled after a certain period.
+
+
