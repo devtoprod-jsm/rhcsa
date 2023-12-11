@@ -1,0 +1,4 @@
+man man-pages (Gives the overview of different sections associated with man pages)
+man -k time (-k is used to get results associated with keywords in different sections in man-pages, here time)
+man date (/STRING)
+date --help (command --help)

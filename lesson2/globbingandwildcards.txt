@@ -1,0 +1,9 @@
+Globbing is also known as using wildcards.
+man 7 glob - for getting overview of globbing
+examples:
+ls host* (file or folder beginning with host)
+ls ?ost (any file or folder starting with any character ending with ost, host most...)
+ls [hm]ost (file or folder host,most)
+ls [!hm]ost (any file or folder not starting with h or m)
+ls [0-9][0-9]script (any file or folder starting with 2 numbers and succeeding with script after that to the end)
+ls *host* (looks for files or folders with host in their name)

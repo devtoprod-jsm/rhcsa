@@ -1,0 +1,19 @@
+i - insertmode
+a - append
+esc - to come back to command mode
+:wq!
+In command mode
+dd - cut a line
+p - to paste a line
+u - undo changes
+ctrl r - to recover last undo
+Text manipulations
+%s/oldtext/newtext(/g for changing all occurences, without this it will only change the first occurence)
+v - visual mode
+navigation and search
+gg - to go to the top of the page
+G - to go to the end of the file
+^ - to go to the beginning of the line
+$ - to go to the end of the line
+/text - to find text from where you are to the end of the file
+?text - to find text from where you are to the beginning of the file

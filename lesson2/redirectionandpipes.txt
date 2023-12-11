@@ -1,0 +1,8 @@
+File Descriptors:
+STDIN - 0 (<)
+STDOUT - 1 (>,>>)
+STDERR - 2 (2>)
+| - to send output of one command to another command
+ ps aux | awk '{print $2}' | sort -n
+ find / -name "*.rpm" > rpmresult 2> /dev/null
+ sort < file_list.txt > file_list_sorted.txt
